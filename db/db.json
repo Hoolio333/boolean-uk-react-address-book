@@ -13,6 +13,27 @@
       "lastName": "Hopper",
       "street": "32 Deebug Road",
       "city": "London"
+    },
+    {
+      "firstName": "Test city",
+      "lastName": "",
+      "street": "",
+      "city": "",
+      "id": 3
+    },
+    {
+      "firstName": "Chris",
+      "lastName": "Testing",
+      "street": "30 Street View",
+      "city": "London",
+      "id": 4
+    },
+    {
+      "firstName": "Joe",
+      "lastName": "Bloggs",
+      "street": "Bloggy Street",
+      "city": "Blogtown",
+      "id": 5
     }
   ]
 }
