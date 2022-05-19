@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function ContactsView() {
   const [contact, setContact] = useState(false);
@@ -15,7 +15,7 @@ function ContactsView() {
       .then((res) => {
         setContact(res);
       });
-  }, [params]);
+  }, [params.id]);
 
   if (!contact) {
     return <p>Loading</p>;
@@ -30,6 +30,9 @@ function ContactsView() {
         {contact.street} {contact.city} {contact.email} {contact.linkedIn}{" "}
         {contact.twitter}
       </p>
+      <button>
+        <Link to={`/contacts/edit/${params.id}`}>Edit</Link>
+      </button>
     </div>
   );
 }
