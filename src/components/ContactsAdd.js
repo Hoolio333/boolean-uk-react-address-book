@@ -6,6 +6,9 @@ const initialNewContact = {
   lastName: "",
   street: "",
   city: "",
+  email: "",
+  linkedIn: "",
+  twitter: "",
 };
 
 function ContactsAdd(props) {
@@ -14,6 +17,7 @@ function ContactsAdd(props) {
   // state
   const { setContacts, contacts } = props;
   const [newContact, setNewContact] = useState(initialNewContact);
+  const navigate = useNavigate();
 
   //TODO: Implement controlled form
   //send POST to json server on form submit
@@ -32,6 +36,7 @@ function ContactsAdd(props) {
         setContacts([...contacts, result]);
         event.target.reset();
         setNewContact(initialNewContact);
+        navigate("/");
       });
   };
 
@@ -81,6 +86,33 @@ function ContactsAdd(props) {
         type="text"
         required
         onChange={(event) => updateContact("city", event.target.value)}
+      />
+
+      <label htmlFor="email">Email:</label>
+      <input
+        id="email"
+        name="email"
+        type="text"
+        required
+        onChange={(event) => updateContact("email", event.target.value)}
+      />
+
+      <label htmlFor="linkedIn">LinkedIn:</label>
+      <input
+        id="linkedIn"
+        name="linkedIn"
+        type="text"
+        required
+        onChange={(event) => updateContact("linkedIn", event.target.value)}
+      />
+
+      <label htmlFor="Twitter">Twitter:</label>
+      <input
+        id="twitter"
+        name="twitter"
+        type="text"
+        required
+        onChange={(event) => updateContact("twitter", event.target.value)}
       />
 
       <div className="actions-section">

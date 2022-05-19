@@ -34,6 +34,36 @@
       "street": "Bloggy Street",
       "city": "Blogtown",
       "id": 5
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Checking",
+      "street": "Checking Street",
+      "city": "Checkton",
+      "email": "check@check.com",
+      "linkedIn": "checkLinkin",
+      "twitter": "@check",
+      "id": 6
+    },
+    {
+      "firstName": "John",
+      "lastName": "Testy",
+      "street": "Yo Street",
+      "city": "Ace City",
+      "email": "Blah@blah.com",
+      "linkedIn": "BlahIn",
+      "twitter": "@blah",
+      "id": 7
+    },
+    {
+      "firstName": "1",
+      "lastName": "2",
+      "street": "3",
+      "city": "4",
+      "email": "5",
+      "linkedIn": "6",
+      "twitter": "7",
+      "id": 8
     }
   ]
 }
